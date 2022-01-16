@@ -1,0 +1,36 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+#Wrap {
+    max-width: 1280px; 
+    height: 800px; 
+    margin: 0 auto; 
+    background: url(../images/bg.png); 
+    background-size: cover; 
+    position: relative;
+}
+.reload_box {
+    width: 883px; 
+    height: 575px; 
+    background: url(../images/bg_reload.png) no-repeat; 
+    background-size: 100% 100%; 
+    position: absolute; 
+    top: 0; bottom: 0; 
+    left: 0; right: 0; 
+    margin: auto;
+}
+.btn_reload {
+    width: 326px;
+    height: 65px;
+    background: url(../images/btn_reload.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 362px;
+    left: 0; right: 0;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

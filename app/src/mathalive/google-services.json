@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "929920245768",
+    "project_id": "mathalive-a8d9e",
+    "storage_bucket": "mathalive-a8d9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929920245768:android:3e937d7c5715cfed7031bd",
+        "android_client_info": {
+          "package_name": "com.Visang.VisangMath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929920245768-m824ev5qhuvul4mal8bmc1citvpc94ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUfqLy0Chj21UfNBBtAaiuI0Q8PwIgk78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929920245768-m824ev5qhuvul4mal8bmc1citvpc94ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929920245768:android:15be4a9251563d357031bd",
+        "android_client_info": {
+          "package_name": "com.Visang.VisangMath2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929920245768-m824ev5qhuvul4mal8bmc1citvpc94ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUfqLy0Chj21UfNBBtAaiuI0Q8PwIgk78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929920245768-m824ev5qhuvul4mal8bmc1citvpc94ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929920245768:android:c45e43d3e119a8857031bd",
+        "android_client_info": {
+          "package_name": "com.visang.mathalive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929920245768-m824ev5qhuvul4mal8bmc1citvpc94ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUfqLy0Chj21UfNBBtAaiuI0Q8PwIgk78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929920245768-m824ev5qhuvul4mal8bmc1citvpc94ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

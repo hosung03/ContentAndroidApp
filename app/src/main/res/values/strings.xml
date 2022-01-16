@@ -1,0 +1,12 @@
+<resources>
+    <string name="preference_server_manual_input">server_manual_input</string>
+    <string name="preference_server_ip_address">server_ip_address</string>
+    <string name="preference_default_ip_address">127.0.0.1</string>
+    <string name="preference_quit_app">quit_app</string>
+    <string name="last_server_address">last_server_address</string>
+    <string name="button_crash">button_crash</string>
+    <string name="preference_video_bitrate">video_bitrate</string>
+    <string name="preference_video_framerate">video_framerate</string>
+    <string name="preference_default_video_bitrate">3000</string>
+    <string name="preference_default_video_framerate">30</string>
+</resources>

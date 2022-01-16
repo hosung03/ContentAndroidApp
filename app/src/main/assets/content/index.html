@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script language="JavaScript">
+    function LaunchApp() {
+        var data = new Object();
+        //data.value = "Z.012345678901234567890123456789012345678901234567890123456789";
+        data.value = "NO50";
+        data.packageName = "com.Visang.VisangMath";
+        var jsonData = JSON.stringify(data) ;
+        window.MathALiveAndroidBridge.launchApp(data.value);
+        var timer2 = setTimeout(function(){
+            //CloseApp();
+        }, 10000);
+    }
+    function CloseApp() {
+        window.MathALiveAndroidBridge.closeApp();
+    }
+
+    function StartScreenRecord() {
+        //alert("startScreenRecord");
+        var data = new Object();
+        data.cbfunc = "cbFuncScreenRecord";
+        var jsonData = JSON.stringify(data) ;
+        window.MathALiveAndroidBridge.startScreenRecord(jsonData);
+    }
+    function StopScreenRecord() {
+        window.MathALiveAndroidBridge.stopScreenRecord();
+    }
+    function cbFuncScreenRecord(result) {
+        //alert(JSON.stringify(result));
+        //document.getElementById('screen').src = result;
+    }
+
+    function StartScreenCapture() {
+        var data = new Object();
+        data.interval = 1.0;
+        data.left = 0;
+        data.top = 0;
+        data.width = 320;
+        data.height = 240;
+        //data.resizeWidth = 0;
+        //data.resizeHeight = 0;
+        //data.imgtype = "png";
+        data.cbfunc = "cbFuncScreenCapture";
+        var jsonData = JSON.stringify(data) ;
+        window.MathALiveAndroidBridge.startCapture(jsonData);
+    }
+    function StopScreenCapture() {
+        window.MathALiveAndroidBridge.stopCapture();
+    }
+    function cbFuncScreenCapture(result) {
+        //alert(JSON.stringify(result));
+        //document.getElementById('screen').src = result;
+    }
+    function error(result) {
+        alert(result)
+    }
+
+    function onGo() {
+        location.href = document.querySelector('input[name=URL]').value;
+    }
+
+    function getVersion() {
+        var version = window.MathALiveAndroidBridge.getVersion();
+        alert(version);
+    }
+
+    function updateApp() {
+        window.MathALiveAndroidBridge.updateApp("http://192.168.0.39:3000/app-mathalive-debug_0.0.2.apk");
+    }
+
+    function updateAppAll() {
+        window.top.MathALiveAndroidBridge.updateAppAll("", "", "https://vcloud.fel40.com/mathalive/login/app-mathalive-debug.apk");
+    }
+
+    function testProgress() {
+        window.MathALiveAndroidBridge.testProgress("downloadProgress");
+    }
+
+    function downloadProgress(result) {
+        var jsonData = JSON.parse(result);
+        alert(jsonData["target"]);
+        alert(jsonData["progress"]);
+        alert(jsonData["filesize"]);
+    }
+    </script>
+
+</head>
+
+<body>
+테스트...!!!
+<br><br>
+<form name="frm" id="frm">
+    <input type="text" name="URL" value="https://"><button type="button" onclick="onGo();">이동</button>
+</form>
+<br>
+
+<br><a href="https://cloud.fel40.com/math.html">https://cloud.fel40.com/math.html</a><br>
+<br><a href="https://192.168.0.11:9002/math.html">https://192.168.0.11:9002/math.html</a><br>
+<br><a href="https://192.168.137.245:8002/math.html">https://192.168.137.245:8002/math.html</a><br>
+<!--<br><a href="https://naver.com">naver.com</a>-->
+<br><br><button type="button" onclick="LaunchApp();">LaunchApp</button>
+<br><br><button type="button" onclick="StartScreenRecord();">Start Screen Record</button>
+<br><br><button type="button" onclick="StopScreenRecord();">Stop Screen Record</button>
+<br><br><button type="button" onclick="StartScreenCapture();">Start Screen Capture</button>
+<br><br><button type="button" onclick="StopScreenCapture();">Stop Screen Capture</button>
+<br><br><button type="button" onclick="getVersion();">getVersion</button>
+<br><br><button type="button" onclick="updateApp();">updateApp</button>
+<br><br><button type="button" onclick="updateAppAll();">updateAppAll</button>
+<br><br><button type="button" onclick="testProgress();">testProgress</button>
+<br><br>
+<!--<img id="screen" src="" width="320" height="240">-->
+
+<!--</img>-->
+
+
+</body>
+
+</html>

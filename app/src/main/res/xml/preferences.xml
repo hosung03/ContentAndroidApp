@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="@string/preference_server_manual_input"
+        android:title="서버 수동 지정"
+        android:summary="서버를 자동으로 검색하지 않고 수동으로 지정한다"
+        android:defaultValue="false" />
+    <EditTextPreference
+        android:dependency="@string/preference_server_manual_input"
+        android:key="@string/preference_server_ip_address"
+        android:title="서버 주소"
+        android:summary="@string/preference_default_ip_address"
+        android:defaultValue="@string/preference_default_ip_address" />
+    <Preference
+        android:title="앱 강제종료"
+        android:key="@string/button_crash"
+        android:summary="앱을 강제로 종료시킨다" />
+    <EditTextPreference
+        android:key="@string/preference_video_bitrate"
+        android:title="녹화 비트레이트 (sec, 0 ~ 4000) : 높을수록 화질 좋아짐"
+        android:summary="@string/preference_default_video_bitrate"
+        android:defaultValue="@string/preference_default_video_bitrate" />
+    <EditTextPreference
+        android:key="@string/preference_video_framerate"
+        android:title="녹화 프레임레이트 (1 ~ 60) : 낮을수록 화질 좋아짐"
+        android:summary="@string/preference_default_video_framerate"
+        android:defaultValue="@string/preference_default_video_framerate" />
+</PreferenceScreen>
